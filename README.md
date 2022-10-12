@@ -44,6 +44,10 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 npm i
+rename file envExample to .env
+create data base and fill the env file with your data
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
 cd client
 npm start
 cd server
